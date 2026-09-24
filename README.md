@@ -1,4 +1,4 @@
-# Linux Scripts & Config Experiments (for future me)
+# Linux Scripts & Config Experiments
 
 ## Goal
 Keep small Linux scripts and config experiments organized so I can quickly find, reuse, and safely improve them later.
