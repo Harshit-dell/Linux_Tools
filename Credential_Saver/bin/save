@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Run the credential saver as a CLI command.
+# Works when invoked via a symlink in /usr/local/bin (resolves real script path).
+
+SCRIPT_PATH="$(readlink -f "${BASH_SOURCE[0]}")"
+ROOT="$(cd "$(dirname "$SCRIPT_PATH")/.." && pwd)"
+JAR="$ROOT/target/Test_logging_learn-2.0-SNAPSHOT.jar"
+
+if [[ ! -f "$JAR" ]]; then
+  echo "JAR not found. Build first: mvn -q package" >&2
+  exit 1
+fi
+
+exec java -jar "$JAR" "$@"
