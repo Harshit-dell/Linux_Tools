@@ -1,7 +1,1 @@
-# WLAN0 Auto Connect Script
-
-A simple Linux shell script to automatically connect to a WiFi network using wlan0 interface.
-
-## Usage
-```bash
-bash connect.sh
+Small scripts and config experiments for Linux—kept here so I can find and reuse them later
