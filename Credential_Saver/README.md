@@ -10,4 +10,6 @@ Small Linux-focused experiment: a CLI-style Java app that loads a path from `con
 
 # How to run
 
+- Open project folder
+- run mvn package
 - Just run Script  Credential_Save/bin/save
